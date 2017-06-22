@@ -47,5 +47,5 @@ dependencies {
 task startJenkins(type: Exec) {
     group 'jenkins'
     description 'Starts Jenkins using Maven. http://localhost:8080/jenkins/'
-    commandLine 'mvn hpi:run'.tokenize()
+    commandLine 'mvn hpi:run -Djetty.port=8080 -Dhpi.prefix=/jenkins'.tokenize()
 }
