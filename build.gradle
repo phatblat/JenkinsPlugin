@@ -8,30 +8,29 @@ description = """TODO Plugin"""
 
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
+
 tasks.withType(JavaCompile) {
-	options.encoding = 'UTF-8'
+    options.encoding = 'UTF-8'
 }
 
 configurations.all {
-it.exclude group: 'org.sonatype.sisu', module: 'sisu-guice'
-it.exclude group: 'log4j', module: 'log4j'
-it.exclude group: 'log4j', module: 'log4j'
-it.exclude group: 'commons-logging', module: 'commons-logging'
-it.exclude group: 'commons-logging', module: 'commons-logging'
+    it.exclude group: 'org.sonatype.sisu', module: 'sisu-guice'
+    it.exclude group: 'log4j', module: 'log4j'
+    it.exclude group: 'commons-logging', module: 'commons-logging'
 }
 
 repositories {
-        
-     maven { url "https://repo.jenkins-ci.org/public/" }
-     maven { url "http://repo.maven.apache.org/maven2" }
+     maven { url 'https://repo.jenkins-ci.org/public/' }
+     mavenCentral()
 }
+
 dependencies {
     compile group: 'org.slf4j', name: 'slf4j-api', version:'1.7.7'
     testCompile group: 'javax.servlet', name: 'javax.servlet-api', version:'3.1.0'
     testCompile group: 'org.jenkins-ci.main', name: 'jenkins-war', version:'1.625.3', classifier:'war-for-test'
     testCompile group: 'org.jenkins-ci.main', name: 'jenkins-war', version:'1.625.3'
     testCompile(group: 'org.jenkins-ci.main', name: 'jenkins-test-harness', version:'2.11') {
-exclude(module: 'junit-dep')
+        exclude(module: 'junit-dep')
     }
     testCompile group: 'org.jenkins-ci', name: 'test-annotations', version:'1.2'
     testCompile group: 'junit', name: 'junit', version:'4.12'
