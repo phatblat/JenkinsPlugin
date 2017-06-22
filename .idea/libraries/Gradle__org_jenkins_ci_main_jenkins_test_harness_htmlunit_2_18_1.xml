@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: org.jenkins-ci.main:jenkins-test-harness-htmlunit:2.18-1">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci.main/jenkins-test-harness-htmlunit/2.18-1/3f93d43517d216f5fde02220fc62d2752cd59533/jenkins-test-harness-htmlunit-2.18-1.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
