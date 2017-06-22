@@ -43,3 +43,9 @@ dependencies {
     compileOnly group: 'javax.servlet', name: 'servlet-api', version:'2.4'
     compileOnly group: 'org.jenkins-ci.main', name: 'jenkins-core', version:'1.625.3'
 }
+
+task startJenkins(type: Exec) {
+    group 'jenkins'
+    description 'Starts Jenkins using Maven. http://localhost:8080/jenkins/'
+    commandLine 'mvn hpi:run'.tokenize()
+}
