@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JenkinsPlugin.iml" filepath="$PROJECT_DIR$/.idea/modules/JenkinsPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jenkins-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/jenkins-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jenkins-plugin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jenkins-plugin_main.iml" group="jenkins-plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jenkins-plugin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jenkins-plugin_test.iml" group="jenkins-plugin" />
+    </modules>
+  </component>
+</project>

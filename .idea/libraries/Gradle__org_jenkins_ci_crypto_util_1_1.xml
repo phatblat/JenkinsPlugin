@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jenkins-ci:crypto-util:1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci/crypto-util/1.1/3a199a4c3748012b9dbbf3080097dc9f302493d8/crypto-util-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci/crypto-util/1.1/d1298053ec0f3cdf590ea4de9a40c46b248cc686/crypto-util-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

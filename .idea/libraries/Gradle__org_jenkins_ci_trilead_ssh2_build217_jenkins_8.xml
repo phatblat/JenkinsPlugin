@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jenkins-ci:trilead-ssh2:build217-jenkins-8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci/trilead-ssh2/build217-jenkins-8/4dbc5f2ebb271b35ea23a221fe76053d4348fa2d/trilead-ssh2-build217-jenkins-8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci/trilead-ssh2/build217-jenkins-8/f4de953cd8d9a06effc5422d3b6d2e91b78e3814/trilead-ssh2-build217-jenkins-8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

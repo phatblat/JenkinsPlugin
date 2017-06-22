@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.kohsuke.stapler:stapler:1.237">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.kohsuke.stapler/stapler/1.237/c27d62fbf2d7f410cc84353918fc5f122828bc32/stapler-1.237.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.kohsuke.stapler/stapler/1.237/cd7d6fad4c09c2796882aa1632f7008777ca49eb/stapler-1.237-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

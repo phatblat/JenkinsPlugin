@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jenkins-ci:bytecode-compatibility-transformer:1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci/bytecode-compatibility-transformer/1.5/90750f3fbc72849502c50e46d85290986865863c/bytecode-compatibility-transformer-1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci/bytecode-compatibility-transformer/1.5/9535eba7876bc551fe6f2de9e665e7105f3378b3/bytecode-compatibility-transformer-1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

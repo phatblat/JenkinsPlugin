@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jenkins-ci:commons-jelly:1.1-jenkins-20120928">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci/commons-jelly/1.1-jenkins-20120928/2720a0d54b7f32479b08970d7738041362e1f410/commons-jelly-1.1-jenkins-20120928.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci/commons-jelly/1.1-jenkins-20120928/e082c47eb32a5c19b7e7215daea0775082dc654f/commons-jelly-1.1-jenkins-20120928-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

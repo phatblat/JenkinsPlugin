@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jenkins-ci.dom4j:dom4j:1.6.1-jenkins-4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci.dom4j/dom4j/1.6.1-jenkins-4/9a370b2010b5a1223c7a43dae6c05226918e17b1/dom4j-1.6.1-jenkins-4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci.dom4j/dom4j/1.6.1-jenkins-4/57f81e97f5c380053febc9e31ae2bee86ffe51a7/dom4j-1.6.1-jenkins-4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

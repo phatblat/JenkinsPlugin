@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jenkins-ci.main:remoting:2.53.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci.main/remoting/2.53.2/d4d508d0656998bf6c2a210ecf0cf476e6fe9b3c/remoting-2.53.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jenkins-ci.main/remoting/2.53.2/6ec9209c6486ac5a1fa1dba7252dcfc72f575135/remoting-2.53.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
