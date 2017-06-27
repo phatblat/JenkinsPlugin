@@ -10,7 +10,7 @@ node {
             // PRB needs custom refspec
             Map scm = [
                 $class: 'GitSCM',
-                branches: [[env.sha1]],
+                branches: [[name: env.sha1]],
                 extensions: [
                     //[$class: 'RelativeTargetDirectory', relativeTargetDir: conf.dir],
                     [$class: 'CleanCheckout'],
