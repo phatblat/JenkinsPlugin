@@ -43,3 +43,7 @@ gradlew.bat
 
 # Sonarlint plugin
 .idea/sonarlint
+
+# Constant thrashing
+.idea/compiler.xml
+.idea/modules.xml
