@@ -8,9 +8,9 @@ node {
         step([$class: 'WsCleanup'])
         if (env.sha1) {
             // PRB needs custom refspec
-                Map scm = [
-                    $class: 'GitSCM',
-                    extensions: [
+            Map scm = [
+                $class: 'GitSCM',
+                extensions: [
                     //[$class: 'RelativeTargetDirectory', relativeTargetDir: conf.dir],
                     [$class: 'CleanCheckout'],
                     [$class: 'PruneStaleBranch']
