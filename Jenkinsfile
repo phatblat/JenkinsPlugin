@@ -3,6 +3,9 @@
  * JenkinsPlugin
  */
 
+String gitRepoUrl = 'git@github.com:phatblat/JenkinsPlugin.git'
+String gitCredentials = '6715cdce-69af-499f-a621-05488b298ae1'
+
 node {
     stage('Clone sources') {
         step([$class: 'WsCleanup'])
@@ -17,15 +20,15 @@ node {
                     [$class: 'PruneStaleBranch']
                 ],
                 userRemoteConfigs: [[
-                    credentialsId:  '6715cdce-69af-499f-a621-05488b298ae1',
+                    credentialsId:  gitCredentials,
                     refspec: "+refs/heads/*:refs/remotes/origin/* +refs/pull/*:refs/remotes/origin/pr/*",
-                    url: 'git@github.com:phatblat/JenkinsPlugin.git'
+                    url: gitRepoUrl
                 ]]
             ]
             checkout scm
         } else {
             // Normal build
-          git 'git@github.com:phatblat/JenkinsPlugin.git'
+          git gitRepoUrl
         }
     }
     stage('Maven build') {
