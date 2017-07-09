@@ -37,8 +37,6 @@ node {
         sh 'mvn package'
     }
     stage('Gradle build') {
-        def gradleHome = tool 'Gradle'
-        env.PATH = "${gradleHome}:${env.PATH}"
-        sh 'gradle build'
+        sh './gradlew build'
     }
 }
