@@ -20,16 +20,20 @@ configurations.all {
 }
 
 repositories {
-     maven { url 'https://repo.jenkins-ci.org/public/' }
-     mavenCentral()
+     maven { url "https://repo.jenkins-ci.org/public/" }
+     maven { url "http://repo.maven.apache.org/maven2" }
 }
 
 dependencies {
+    compile group: 'org.jenkins-ci.plugins.workflow', name: 'workflow-aggregator', version:'2.5'
+    compile(group: 'org.jenkins-ci.plugins.workflow', name: 'workflow-cps', version:'2.24') {
+        exclude(module: 'scm-api')
+    }
     compile group: 'org.slf4j', name: 'slf4j-api', version:'1.7.7'
+    testCompile group: 'org.jenkins-ci.plugins', name: 'script-security', version:'1.25'
     testCompile group: 'javax.servlet', name: 'javax.servlet-api', version:'3.1.0'
-    testCompile group: 'org.jenkins-ci.main', name: 'jenkins-war', version:'1.625.3', classifier:'war-for-test'
-    testCompile group: 'org.jenkins-ci.main', name: 'jenkins-war', version:'1.625.3'
-    testCompile(group: 'org.jenkins-ci.main', name: 'jenkins-test-harness', version:'2.11') {
+    testCompile group: 'org.jenkins-ci.main', name: 'jenkins-war', version:'2.0' //, classifier:'war-for-test'
+    testCompile(group: 'org.jenkins-ci.main', name: 'jenkins-test-harness', version:'2.23') {
         exclude(module: 'junit-dep')
     }
     testCompile group: 'org.jenkins-ci', name: 'test-annotations', version:'1.2'
@@ -41,8 +45,15 @@ dependencies {
     compileOnly group: 'net.jcip', name: 'jcip-annotations', version:'1.0'
     compileOnly group: 'org.codehaus.mojo', name: 'animal-sniffer-annotations', version:'1.14'
     compileOnly group: 'javax.servlet', name: 'servlet-api', version:'2.4'
-    compileOnly group: 'org.jenkins-ci.main', name: 'jenkins-core', version:'1.625.3'
+    compileOnly group: 'org.jenkins-ci.main', name: 'jenkins-core', version:'2.0'
 }
+
+//packaging tests
+task packageTests(type: Jar) {
+  from sourceSets.test.output
+  classifier = 'tests'
+}
+artifacts.archives packageTests
 
 task startJenkins(type: Exec) {
     group 'jenkins'
