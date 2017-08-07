@@ -1,3 +1,13 @@
+buildscript {
+    repositories {
+        maven { url "https://repo.jenkins-ci.org/public/" }
+        maven { url "http://repo.maven.apache.org/maven2" }
+    }
+    dependencies {
+        classpath 'org.jenkins-ci.tools:maven-hpi-plugin:+'
+    }
+}
+
 wrapper {
     gradleVersion = '4.0.2'
     distributionType = 'ALL'
@@ -65,3 +75,6 @@ task startJenkins(type: Exec) {
     description 'Starts Jenkins using Maven. http://localhost:8080/jenkins/'
     commandLine 'mvn hpi:run -Djetty.port=8080 -Dhpi.prefix=/jenkins'.tokenize()
 }
+
+//import org.jenkinsci.maven.plugins.hpi.RunMojo
+//RunMojo.execute()
