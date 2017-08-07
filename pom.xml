@@ -75,6 +75,25 @@
       <artifactId>workflow-aggregator</artifactId>
       <version>2.5</version>
     </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.workflow</groupId>
+      <artifactId>workflow-cps</artifactId>
+      <version>2.24</version>
+      <exclusions>
+        <!-- workflow-cps wants v1.1 of scm-api -->
+        <exclusion>
+          <groupId>org.jenkins-ci.plugins</groupId>
+          <artifactId>scm-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <!-- Override version of script-security since workflow-cps, workflow-multibranch and workflow-aggregator want older versions -->
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>script-security</artifactId>
+      <version>1.25</version><!-- v1.28 is latest -->
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
 </project>
