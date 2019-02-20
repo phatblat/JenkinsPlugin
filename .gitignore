@@ -45,5 +45,12 @@ gradlew.bat
 .idea/sonarlint
 
 # Constant thrashing
+.idea/.name
 .idea/compiler.xml
+.idea/encodings.xml
+.idea/inspectionProfiles/
+.idea/libraries/
+.idea/misc.xml
 .idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
